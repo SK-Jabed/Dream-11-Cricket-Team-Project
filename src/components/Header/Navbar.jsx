@@ -3,7 +3,7 @@ import coin from "../../assets/coin.png"
 
 const Navbar = () => {
     return (
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center mt-4 md:mt-8">
             <div className="flex items-center justify-start space-x-1">
                 <img src={logo} alt="Project Logo"></img>
                 <h2 className="text-2xl font-bold">DREAM <span className="text-red-500">11</span></h2>
