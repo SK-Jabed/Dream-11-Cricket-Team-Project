@@ -8,7 +8,7 @@ const Navbar = () => {
                 <img src={logo} alt="Project Logo"></img>
                 <h2 className="text-2xl font-bold">DREAM <span className="text-red-500">11</span></h2>
             </div>
-            <div className="flex items-center gap-12">
+            <div className="flex items-center gap-3 md:gap-12">
                 <ul className="hidden lg:flex items-center gap-12">
                     <li className="text-lg font-medium text-gray-400 hover:text-black hover:font-semibold"><a href="#">Home</a></li>
                     <li className="text-lg font-medium text-gray-400 hover:text-black hover:font-semibold"><a href="#">Fixture</a></li>
@@ -22,6 +22,18 @@ const Navbar = () => {
                 <div className="bg-yellow-200 flex items-center justify-center w-12 h-12 rounded-full">
                 <a href="#"><i className="fa-regular fa-circle-user text-2xl"></i></a>
                 </div>
+
+                <div className="dropdown lg:hidden relative ml-2">
+                <div tabindex="0" role="button" className="btn p-4 bg-userBorderColor border-2 border-solid rounded-full lg:hidden hover:bg-userBorderColor">
+                  <i className="fa-solid fa-bars"></i>
+                </div>
+                <ul tabindex="0" className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
+                  <li><a className="text-xl hover:font-bold hover:transition duration-300 hover:ease-in-out" href="#index.html">Home</a></li>
+                  <li><a className="text-xl text-primaryTextColor hover:transition duration-300 ease-in-out hover:font-bold hover:primaryTextColor" href="#">Fixture</a></li>
+                  <li><a className="text-xl text-primaryTextColor hover:transition duration-300 ease-in-out hover:font-bold hover:primaryTextColor" href="#">Teams</a></li>
+                  <li><a className="text-xl text-primaryTextColor hover:transition duration-300 ease-in-out hover:font-bold hover:primaryTextColor" href="#">Schedules</a></li>              
+                </ul>
+              </div>
             </div>
         </div>
     );
