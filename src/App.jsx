@@ -4,7 +4,7 @@ import Navbar from "./components/Header/Navbar";
 
 const App = () => {
   return (
-    <div className="container w-11/12 mx-auto px-4">
+    <div className="">
       {/* Header Section Starts Here */}
       <Navbar></Navbar>
       <Banner></Banner>

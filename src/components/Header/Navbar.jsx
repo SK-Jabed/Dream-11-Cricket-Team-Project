@@ -3,7 +3,7 @@ import coin from "../../assets/coin.png"
 
 const Navbar = () => {
     return (
-        <div className="flex flex-col md:flex-row justify-between items-center mt-4 md:mt-8">
+        <div className="container w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center mt-4 md:mt-8">
             <div className="flex items-center justify-start space-x-1">
                 <img src={logo} alt="Project Logo"></img>
                 <h2 className="text-2xl font-bold">DREAM <span className="text-red-500">11</span></h2>
@@ -24,9 +24,11 @@ const Navbar = () => {
                 </div>
 
                 <div className="dropdown lg:hidden relative ml-2">
+                 {/* eslint-disable-next-line react/no-unknown-property */}
                 <div tabindex="0" role="button" className="btn p-4 bg-userBorderColor border-2 border-solid rounded-full lg:hidden hover:bg-userBorderColor">
                   <i className="fa-solid fa-bars"></i>
                 </div>
+                {/* eslint-disable-next-line react/no-unknown-property */}
                 <ul tabindex="0" className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
                   <li><a className="text-xl hover:font-bold hover:transition duration-300 hover:ease-in-out" href="#index.html">Home</a></li>
                   <li><a className="text-xl text-primaryTextColor hover:transition duration-300 ease-in-out hover:font-bold hover:primaryTextColor" href="#">Fixture</a></li>
