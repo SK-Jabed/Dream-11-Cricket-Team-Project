@@ -18,11 +18,16 @@ const App = () => {
     setCoin(coin + 5000000);
   }
 
+  const handleDecreaseCoin = (decreaseCoin) => {
+    setCoin(coin - decreaseCoin)
+  }
+
   const addPlayerToQueue = player => {
     const isExist = playerQueue.find(
       previousPlayer => previousPlayer.player_id === player.player_id
     );
     if (!isExist) {
+      handleDecreaseCoin(player.bidding_price)
       setPlayerQueue([...playerQueue, player])
     }
     else {
@@ -30,7 +35,10 @@ const App = () => {
     }
   } 
 
-  const handleRemovePlayer = id => {
+  
+
+  const handleRemovePlayer = (id) => {
+    // handleIncreaseCoin(id)
     const updatedPlayerQueue = playerQueue.filter(player => player.player_id !== id)
     setPlayerQueue(updatedPlayerQueue)
   }
