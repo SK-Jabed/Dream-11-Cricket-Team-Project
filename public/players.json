@@ -5,7 +5,7 @@
         "national_team": "India",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Batsman",
-        "batting/balling type": "Right-hand bat",
+        "batting_balling_type": "Right-hand bat",
         "rating": 95,
         "bidding_price": 2500000
     },
@@ -15,7 +15,7 @@
         "national_team": "New Zealand",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Batsman",
-        "batting/balling type": "Right-hand bat",
+        "batting_balling_type": "Right-hand bat",
         "rating": 92,
         "bidding_price": 2200000
     },
@@ -25,7 +25,7 @@
         "national_team": "Pakistan",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Batsman",
-        "batting/balling type": "Right-hand bat",
+        "batting_balling_type": "Right-hand bat",
         "rating": 93,
         "bidding_price": 2100000
     },
@@ -35,7 +35,7 @@
         "national_team": "England",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Batsman",
-        "batting/balling type": "Right-hand bat",
+        "batting_balling_type": "Right-hand bat",
         "rating": 90,
         "bidding_price": 2000000
     },
@@ -45,7 +45,7 @@
         "national_team": "Australia",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Batsman",
-        "batting/balling type": "Right-hand bat",
+        "batting_balling_type": "Right-hand bat",
         "rating": 94,
         "bidding_price": 2300000
     },
@@ -55,7 +55,7 @@
         "national_team": "India",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Bowler",
-        "batting/balling type": "Right-arm fast",
+        "batting_balling_type": "Right-arm fast",
         "rating": 89,
         "bidding_price": 1800000
     },
@@ -65,7 +65,7 @@
         "national_team": "New Zealand",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Bowler",
-        "batting/balling type": "Left-arm fast",
+        "batting_balling_type": "Left-arm fast",
         "rating": 88,
         "bidding_price": 1750000
     },
@@ -75,7 +75,7 @@
         "national_team": "Australia",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Bowler",
-        "batting/balling type": "Right-arm fast",
+        "batting_balling_type": "Right-arm fast",
         "rating": 90,
         "bidding_price": 2000000
     },
@@ -85,7 +85,7 @@
         "national_team": "Afghanistan",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "All-rounder",
-        "batting/balling type": "Right-arm leg spin",
+        "batting_balling_type": "Right-arm leg spin",
         "rating": 91,
         "bidding_price": 1900000
     },
@@ -95,7 +95,7 @@
         "national_team": "England",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "All-rounder",
-        "batting/balling type": "Left-hand bat, Right-arm fast-medium",
+        "batting_balling_type": "Left-hand bat, Right-arm fast-medium",
         "rating": 92,
         "bidding_price": 2200000
     },
@@ -105,7 +105,7 @@
         "national_team": "Australia",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Batsman",
-        "batting/balling type": "Left-hand bat",
+        "batting_balling_type": "Left-hand bat",
         "rating": 88,
         "bidding_price": 1700000
     },
@@ -115,7 +115,7 @@
         "national_team": "Pakistan",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Bowler",
-        "batting/balling type": "Left-arm fast",
+        "batting_balling_type": "Left-arm fast",
         "rating": 87,
         "bidding_price": 1650000
     },
@@ -125,7 +125,7 @@
         "national_team": "Bangladesh",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "All-rounder",
-        "batting/balling type": "Left-hand bat, Left-arm spin",
+        "batting_balling_type": "Left-hand bat, Left-arm spin",
         "rating": 89,
         "bidding_price": 1850000
     },
@@ -135,7 +135,7 @@
         "national_team": "South Africa",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Wicketkeeper-batsman",
-        "batting/balling type": "Left-hand bat",
+        "batting_balling_type": "Left-hand bat",
         "rating": 87,
         "bidding_price": 1600000
     },
@@ -145,7 +145,7 @@
         "national_team": "West Indies",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "All-rounder",
-        "batting/balling type": "Right-hand bat, Right-arm fast-medium",
+        "batting_balling_type": "Right-hand bat, Right-arm fast-medium",
         "rating": 88,
         "bidding_price": 1800000
     }

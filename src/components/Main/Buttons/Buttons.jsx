@@ -1,5 +1,6 @@
 import AvailablePlayers from "../AvailablePlayers/AvailablePlayers";
 import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
+import PropTypes from "prop-types";
 import "./Buttons.css"
 
 const Buttons = ({handleIsActiveBtn, isActive}) => {
@@ -25,5 +26,10 @@ const Buttons = ({handleIsActiveBtn, isActive}) => {
         
     );
 };
+
+Buttons.propTypes = {
+    handleIsActiveBtn: PropTypes.func,
+    isActive: PropTypes.object
+}
 
 export default Buttons;
