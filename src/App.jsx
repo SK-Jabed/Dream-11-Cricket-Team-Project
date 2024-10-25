@@ -10,6 +10,22 @@ const App = () => {
     status: "available"
   });
 
+  const [playerQueue, setPlayerQueue] = useState([]);
+
+  const addPlayerToQueue = player => {
+    const isExist = playerQueue.find(
+      previousPlayer => previousPlayer.player_id === player.player_id
+    );
+    if (!isExist) {
+      setPlayerQueue([...playerQueue, player])
+    }
+    else {
+      alert("This player is already selected")
+    }
+  } 
+
+  // console.log(playerQueue);
+
   const handleIsActiveBtn = (status) => {
     if (status == "available") {
       setIsActive({
@@ -35,7 +51,12 @@ const App = () => {
       
       {/* Header Section Ends Here */}
       {/* Main Section Starts Here */}
-      <Buttons isActive={isActive} handleIsActiveBtn={handleIsActiveBtn}></Buttons>
+      <Buttons 
+      isActive={isActive} 
+      handleIsActiveBtn={handleIsActiveBtn} 
+      addPlayerToQueue={addPlayerToQueue} 
+      playerQueue={playerQueue}
+      ></Buttons>
       {/* Main Section Ends Here */}
       {/* Footer Section Starts Here */}
       <Footer></Footer>

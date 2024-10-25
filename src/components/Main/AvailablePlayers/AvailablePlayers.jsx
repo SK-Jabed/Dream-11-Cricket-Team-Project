@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 
-const AvailablePlayers = () => {
+const AvailablePlayers = ({addPlayerToQueue}) => {
     const [allPlayers, setAllPlayers] = useState([]);
 
     useEffect(() => {
@@ -10,7 +10,7 @@ const AvailablePlayers = () => {
             .then(data => setAllPlayers(data))
     }, [])
 
-    console.log(allPlayers);
+    // console.log(allPlayers);
 
     return (
         <div>
@@ -44,7 +44,7 @@ const AvailablePlayers = () => {
                             </div>
                             <div className="flex justify-between items-center">
                                 <p>Price: ${player.bidding_price}</p>
-                                <button className="btn">Choose Player</button>
+                                <button onClick={() => addPlayerToQueue(player)} className="btn">Choose Player</button>
                             </div>
                         </div>
                     </div>

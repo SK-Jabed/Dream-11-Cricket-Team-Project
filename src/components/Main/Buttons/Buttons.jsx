@@ -3,22 +3,22 @@ import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 import PropTypes from "prop-types";
 import "./Buttons.css"
 
-const Buttons = ({handleIsActiveBtn, isActive}) => {
+const Buttons = ({handleIsActiveBtn, isActive, addPlayerToQueue, playerQueue}) => {
     
     return (
         <div className="container w-11/12 mx-auto flex flex-col">
             <div className="flex justify-between items-center">
                 {
-                isActive.player ? <h2 className="text-2xl font-bold">Available Players</h2> : <h2 className="text-2xl font-bold">Selected Players</h2>
+                isActive.player ? <h2 className="text-2xl font-bold">Available Players</h2> : <h2 className="text-2xl font-bold">Selected Players ({playerQueue.length}/6)</h2>
                 }
                 <div>                   
                 <div onClick={() => handleIsActiveBtn("available")} className={`${isActive.player ? "btn active" : "btn"}`}>Available</div>
-                <div onClick={() => handleIsActiveBtn("selected")} className={`${isActive.player ? "btn" : "btn active"}`}>Selected</div>
+                <div onClick={() => handleIsActiveBtn("selected")} className={`${isActive.player ? "btn" : "btn active"}`}>Selected ({playerQueue.length})</div>
                 </div>
             </div>
             
             {
-                isActive.player ? <AvailablePlayers></AvailablePlayers> : <SelectedPlayers></SelectedPlayers>
+                isActive.player ? <AvailablePlayers addPlayerToQueue={addPlayerToQueue}></AvailablePlayers> : <SelectedPlayers playerQueue={playerQueue}></SelectedPlayers>
             }
                       
         </div>
