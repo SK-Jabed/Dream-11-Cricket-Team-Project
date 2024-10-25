@@ -12,7 +12,11 @@ const App = () => {
 
   const [playerQueue, setPlayerQueue] = useState([]);
 
-  // const [removedPlayer, setRemovedPlayer] = useState([])
+  const [coin, setCoin] = useState(0);
+
+  const handleCreditCoin = () => {
+    setCoin(coin + 5000000);
+  }
 
   const addPlayerToQueue = player => {
     const isExist = playerQueue.find(
@@ -27,8 +31,6 @@ const App = () => {
   } 
 
   const handleRemovePlayer = id => {
-    const removedPlayer = playerQueue.find(player => player.player_id === id);
-    
     const updatedPlayerQueue = playerQueue.filter(player => player.player_id !== id)
     setPlayerQueue(updatedPlayerQueue)
   }
@@ -53,8 +55,8 @@ const App = () => {
   return (
     <div className="">
       {/* Header Section Starts Here */}
-      <Navbar></Navbar>
-      <Banner></Banner>
+      <Navbar coin={coin}></Navbar>
+      <Banner handleCreditCoin={handleCreditCoin}></Banner>
       
       {/* Header Section Ends Here */}
       {/* Main Section Starts Here */}

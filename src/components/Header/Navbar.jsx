@@ -1,7 +1,7 @@
 import logo from "../../assets/logo.png"
-import coin from "../../assets/coin.png"
+import coinPng from "../../assets/coin.png"
 
-const Navbar = () => {
+const Navbar = ({coin}) => {
     return (
         <div className="container w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center mt-4 md:mt-8">
             <div className="flex items-center justify-start space-x-1">
@@ -16,8 +16,8 @@ const Navbar = () => {
                     <li className="text-lg font-medium text-gray-400 hover:text-black hover:font-semibold"><a href="#">Schedules</a></li>
                 </ul>
                 <div className="flex items-center space-x-2 border-2 border-solid border-yellow-300 py-3 px-5 rounded-xl">
-                <p className="text-lg font-semibold "><span>0</span> Coin</p>
-                <img src={coin} alt="Coin Image"></img>
+                <p className="text-lg font-semibold "><span>{coin}</span> Coin</p>
+                <img src={coinPng} alt="Coin Image"></img>
                 </div>
                 <div className="bg-yellow-200 flex items-center justify-center w-12 h-12 rounded-full">
                 <a href="#"><i className="fa-regular fa-circle-user text-2xl"></i></a>
