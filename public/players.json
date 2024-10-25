@@ -1,0 +1,152 @@
+[
+    {
+        "player_id": 1,
+        "player_name": "Virat Kohli",
+        "national_team": "India",
+        "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
+        "player_role": "Batsman",
+        "batting/balling type": "Right-hand bat",
+        "rating": 95,
+        "bidding_price": 2500000
+    },
+    {
+        "player_id": 2,
+        "player_name": "Kane Williamson",
+        "national_team": "New Zealand",
+        "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
+        "player_role": "Batsman",
+        "batting/balling type": "Right-hand bat",
+        "rating": 92,
+        "bidding_price": 2200000
+    },
+    {
+        "player_id": 3,
+        "player_name": "Babar Azam",
+        "national_team": "Pakistan",
+        "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
+        "player_role": "Batsman",
+        "batting/balling type": "Right-hand bat",
+        "rating": 93,
+        "bidding_price": 2100000
+    },
+    {
+        "player_id": 4,
+        "player_name": "Joe Root",
+        "national_team": "England",
+        "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
+        "player_role": "Batsman",
+        "batting/balling type": "Right-hand bat",
+        "rating": 90,
+        "bidding_price": 2000000
+    },
+    {
+        "player_id": 5,
+        "player_name": "Steve Smith",
+        "national_team": "Australia",
+        "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
+        "player_role": "Batsman",
+        "batting/balling type": "Right-hand bat",
+        "rating": 94,
+        "bidding_price": 2300000
+    },
+    {
+        "player_id": 6,
+        "player_name": "Jasprit Bumrah",
+        "national_team": "India",
+        "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
+        "player_role": "Bowler",
+        "batting/balling type": "Right-arm fast",
+        "rating": 89,
+        "bidding_price": 1800000
+    },
+    {
+        "player_id": 7,
+        "player_name": "Trent Boult",
+        "national_team": "New Zealand",
+        "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
+        "player_role": "Bowler",
+        "batting/balling type": "Left-arm fast",
+        "rating": 88,
+        "bidding_price": 1750000
+    },
+    {
+        "player_id": 8,
+        "player_name": "Pat Cummins",
+        "national_team": "Australia",
+        "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
+        "player_role": "Bowler",
+        "batting/balling type": "Right-arm fast",
+        "rating": 90,
+        "bidding_price": 2000000
+    },
+    {
+        "player_id": 9,
+        "player_name": "Rashid Khan",
+        "national_team": "Afghanistan",
+        "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
+        "player_role": "All-rounder",
+        "batting/balling type": "Right-arm leg spin",
+        "rating": 91,
+        "bidding_price": 1900000
+    },
+    {
+        "player_id": 10,
+        "player_name": "Ben Stokes",
+        "national_team": "England",
+        "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
+        "player_role": "All-rounder",
+        "batting/balling type": "Left-hand bat, Right-arm fast-medium",
+        "rating": 92,
+        "bidding_price": 2200000
+    },
+    {
+        "player_id": 11,
+        "player_name": "David Warner",
+        "national_team": "Australia",
+        "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
+        "player_role": "Batsman",
+        "batting/balling type": "Left-hand bat",
+        "rating": 88,
+        "bidding_price": 1700000
+    },
+    {
+        "player_id": 12,
+        "player_name": "Shaheen Afridi",
+        "national_team": "Pakistan",
+        "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
+        "player_role": "Bowler",
+        "batting/balling type": "Left-arm fast",
+        "rating": 87,
+        "bidding_price": 1650000
+    },
+    {
+        "player_id": 13,
+        "player_name": "Shakib Al Hasan",
+        "national_team": "Bangladesh",
+        "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
+        "player_role": "All-rounder",
+        "batting/balling type": "Left-hand bat, Left-arm spin",
+        "rating": 89,
+        "bidding_price": 1850000
+    },
+    {
+        "player_id": 14,
+        "player_name": "Quinton de Kock",
+        "national_team": "South Africa",
+        "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
+        "player_role": "Wicketkeeper-batsman",
+        "batting/balling type": "Left-hand bat",
+        "rating": 87,
+        "bidding_price": 1600000
+    },
+    {
+        "player_id": 15,
+        "player_name": "Andre Russell",
+        "national_team": "West Indies",
+        "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
+        "player_role": "All-rounder",
+        "batting/balling type": "Right-hand bat, Right-arm fast-medium",
+        "rating": 88,
+        "bidding_price": 1800000
+    }
+]
