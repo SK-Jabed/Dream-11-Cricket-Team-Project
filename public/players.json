@@ -1,11 +1,12 @@
 [
     {
         "player_id": 1,
-        "player_name": "Virat Kohli",
-        "national_team": "India",
+        "player_name": "AB de Villiers",
+        "national_team": "South Africa",
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
-        "player_role": "Batsman",
-        "batting_balling_type": "Right-hand bat",
+        "player_role": "WK-Batsman",
+        "batting_style": "Right-hand bat",
+        "bowling_style": "Right-hand bat",
         "rating": 95,
         "bidding_price": 2500000
     },
@@ -16,6 +17,7 @@
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Batsman",
         "batting_balling_type": "Right-hand bat",
+        "bowling_style": "Right-hand bat",
         "rating": 92,
         "bidding_price": 2200000
     },
@@ -26,6 +28,7 @@
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Batsman",
         "batting_balling_type": "Right-hand bat",
+        "bowling_style": "Right-hand bat",
         "rating": 93,
         "bidding_price": 2100000
     },
@@ -36,6 +39,7 @@
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Batsman",
         "batting_balling_type": "Right-hand bat",
+        "bowling_style": "Right-hand bat",
         "rating": 90,
         "bidding_price": 2000000
     },
@@ -46,6 +50,7 @@
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Batsman",
         "batting_balling_type": "Right-hand bat",
+        "bowling_style": "Right-hand bat",
         "rating": 94,
         "bidding_price": 2300000
     },
@@ -56,6 +61,7 @@
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Bowler",
         "batting_balling_type": "Right-arm fast",
+        "bowling_style": "Right-hand bat",
         "rating": 89,
         "bidding_price": 1800000
     },
@@ -66,6 +72,7 @@
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Bowler",
         "batting_balling_type": "Left-arm fast",
+        "bowling_style": "Right-hand bat",
         "rating": 88,
         "bidding_price": 1750000
     },
@@ -76,6 +83,7 @@
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Bowler",
         "batting_balling_type": "Right-arm fast",
+        "bowling_style": "Right-hand bat",
         "rating": 90,
         "bidding_price": 2000000
     },
@@ -86,6 +94,7 @@
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "All-rounder",
         "batting_balling_type": "Right-arm leg spin",
+        "bowling_style": "Right-hand bat",
         "rating": 91,
         "bidding_price": 1900000
     },
@@ -96,6 +105,7 @@
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "All-rounder",
         "batting_balling_type": "Left-hand bat, Right-arm fast-medium",
+        "bowling_style": "Right-hand bat",
         "rating": 92,
         "bidding_price": 2200000
     },
@@ -106,6 +116,7 @@
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Batsman",
         "batting_balling_type": "Left-hand bat",
+        "bowling_style": "Right-hand bat",
         "rating": 88,
         "bidding_price": 1700000
     },
@@ -116,6 +127,7 @@
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Bowler",
         "batting_balling_type": "Left-arm fast",
+        "bowling_style": "Right-hand bat",
         "rating": 87,
         "bidding_price": 1650000
     },
@@ -126,6 +138,7 @@
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "All-rounder",
         "batting_balling_type": "Left-hand bat, Left-arm spin",
+        "bowling_style": "Right-hand bat",
         "rating": 89,
         "bidding_price": 1850000
     },
@@ -136,6 +149,7 @@
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "Wicketkeeper-batsman",
         "batting_balling_type": "Left-hand bat",
+        "bowling_style": "Right-hand bat",
         "rating": 87,
         "bidding_price": 1600000
     },
@@ -146,6 +160,7 @@
         "player_image": "https://i.ibb.co/857mGk4/abd-image.jpg",
         "player_role": "All-rounder",
         "batting_balling_type": "Right-hand bat, Right-arm fast-medium",
+        "bowling_style": "Right-hand bat",
         "rating": 88,
         "bidding_price": 1800000
     }
