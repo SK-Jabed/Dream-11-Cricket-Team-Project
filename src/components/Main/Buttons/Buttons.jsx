@@ -3,7 +3,7 @@ import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 import PropTypes from "prop-types";
 import "./Buttons.css"
 
-const Buttons = ({handleIsActiveBtn, isActive, addPlayerToQueue, playerQueue}) => {
+const Buttons = ({handleIsActiveBtn, isActive, addPlayerToQueue, playerQueue, handleRemovePlayer}) => {
     
     return (
         <div className="container w-11/12 mx-auto flex flex-col">
@@ -18,7 +18,7 @@ const Buttons = ({handleIsActiveBtn, isActive, addPlayerToQueue, playerQueue}) =
             </div>
             
             {
-                isActive.player ? <AvailablePlayers addPlayerToQueue={addPlayerToQueue}></AvailablePlayers> : <SelectedPlayers playerQueue={playerQueue}></SelectedPlayers>
+                isActive.player ? <AvailablePlayers addPlayerToQueue={addPlayerToQueue}></AvailablePlayers> : <SelectedPlayers playerQueue={playerQueue} handleRemovePlayer={handleRemovePlayer}></SelectedPlayers>
             }
                       
         </div>

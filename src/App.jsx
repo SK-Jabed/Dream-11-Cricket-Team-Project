@@ -12,6 +12,8 @@ const App = () => {
 
   const [playerQueue, setPlayerQueue] = useState([]);
 
+  // const [removedPlayer, setRemovedPlayer] = useState([])
+
   const addPlayerToQueue = player => {
     const isExist = playerQueue.find(
       previousPlayer => previousPlayer.player_id === player.player_id
@@ -24,7 +26,12 @@ const App = () => {
     }
   } 
 
-  // console.log(playerQueue);
+  const handleRemovePlayer = id => {
+    const removedPlayer = playerQueue.find(player => player.player_id === id);
+    
+    const updatedPlayerQueue = playerQueue.filter(player => player.player_id !== id)
+    setPlayerQueue(updatedPlayerQueue)
+  }
 
   const handleIsActiveBtn = (status) => {
     if (status == "available") {
@@ -56,6 +63,7 @@ const App = () => {
       handleIsActiveBtn={handleIsActiveBtn} 
       addPlayerToQueue={addPlayerToQueue} 
       playerQueue={playerQueue}
+      handleRemovePlayer ={handleRemovePlayer}
       ></Buttons>
       {/* Main Section Ends Here */}
       {/* Footer Section Starts Here */}
