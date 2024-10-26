@@ -3,6 +3,8 @@ import Footer from "./components/Footer/Footer";
 import Banner from "./components/Header/Banner";
 import Navbar from "./components/Header/Navbar";
 import Buttons from "./components/Main/Buttons/Buttons";
+import { toast } from "react-toastify";
+
 
 const App = () => {
   const [isActive, setIsActive] = useState({
@@ -16,31 +18,114 @@ const App = () => {
 
   const handleCreditCoin = () => {
     setCoin(coin + 5000000);
+    toast.success('Insufficient coins to select this player.', {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                
+            });
+            return;
   }
 
-  const handleDecreaseCoin = (decreaseCoin) => {
-    setCoin(coin - decreaseCoin)
-  }
+  
 
   const addPlayerToQueue = player => {
     const isExist = playerQueue.find(
       previousPlayer => previousPlayer.player_id === player.player_id
     );
-    if (!isExist) {
-      handleDecreaseCoin(player.bidding_price)
+
+    if (playerQueue.length >= 6) {
+            toast.warning('You cannot select more than 6 players.', {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                
+            });
+            return;
+        }
+
+         if (coin >= player.bidding_price) {
+            // setPlayerQueue([...playerQueue, player])
+            
+            // toast.success('Player selected successfully!');
+        } else {
+            toast.error('Insufficient coins to select this player.', {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                
+            });
+            return;
+        }
+
+
+    if (!isExist) {     
       setPlayerQueue([...playerQueue, player])
+      setCoin(coin - player.bidding_price);
+      // handleDecreaseCoin(player.bidding_price) 
+      toast.success('The player is added to your squad', {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                
+            });
+            return;
     }
     else {
-      alert("This player is already selected")
+      toast.error('This Player is Already Slected', {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                
+            });
+            return;
     }
   } 
 
   
 
   const handleRemovePlayer = (id) => {
-    // handleIncreaseCoin(id)
+    const playerToRemove = playerQueue.find(player => player.player_id === id);
     const updatedPlayerQueue = playerQueue.filter(player => player.player_id !== id)
     setPlayerQueue(updatedPlayerQueue)
+    setCoin(coin + playerToRemove.bidding_price);
+    toast.info('You removed this player from your squad', {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                
+            });
+            return;
   }
 
   const handleIsActiveBtn = (status) => {

@@ -19,8 +19,8 @@ const SelectedPlayers = ({playerQueue, handleRemovePlayer, handleIsActiveBtn}) =
                                     <p>{player.batting_balling_type}</p>
                                 </div>
                             </div>
-                            <div className="border-2 border-solid border-yellow-300 px-5 py-3 rounded-xl hover:bg-yellow-400">
-                            <button onClick={() => handleRemovePlayer(player.player_id)} className="flex items-center space-x-2">
+                            <div onClick={() => handleRemovePlayer(player.player_id)} className="border-2 border-solid border-yellow-300 px-5 py-3 rounded-xl hover:bg-yellow-400">
+                            <button  className="flex items-center space-x-2">
                                 <a>Remove</a>
                                 <i className="fa-solid fa-trash text-red-500"></i>
                                 </button>
