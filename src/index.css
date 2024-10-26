@@ -10,8 +10,8 @@ body {
 }
 
 .toastBody {
-  font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
-  color: #10171D; /* #10171D */
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
   font-size: 1rem !important;
-  font-weight: bold;
+  font-weight: bolder;
 }

@@ -3,7 +3,8 @@ import coinPng from "../../assets/coin.png"
 
 const Navbar = ({coin}) => {
     return (
-        <div className="container w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center mt-4 md:mt-8">
+        <div className="container w-11/12 mx-auto">
+          <div className="mx-auto flex flex-col gap-2 md:gap-0 md:flex-row justify-between items-center pt-4 md:pt-8 md:pb-6">         
             <div className="flex items-center justify-start space-x-1">
                 <img src={logo} alt="Project Logo"></img>
                 <h2 className="text-2xl font-bold">DREAM <span className="text-red-500">11</span></h2>
@@ -37,6 +38,7 @@ const Navbar = ({coin}) => {
                 </ul>
               </div>
             </div>
+          </div>  
         </div>
     );
 };

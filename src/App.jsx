@@ -18,21 +18,18 @@ const App = () => {
 
   const handleCreditCoin = () => {
     setCoin(coin + 5000000);
-    toast.success('Insufficient coins to select this player.', {
-                position: "top-center",
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-                
-            });
-            return;
-  }
-
-  
+    toast.success(`Free Credit Added to Your Account !!!`, {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",                
+    });
+    return;
+  };
 
   const addPlayerToQueue = player => {
     const isExist = playerQueue.find(
@@ -40,116 +37,113 @@ const App = () => {
     );
 
     if (playerQueue.length >= 6) {
-            toast.warning('You cannot select more than 6 players.', {
-                position: "top-center",
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-                
-            });
-            return;
-        }
+      toast.warning(`You Cannot Select More Than 6 Players !!!`, {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",          
+      });
+      return;
+    };
 
-         if (coin >= player.bidding_price) {
-            // setPlayerQueue([...playerQueue, player])
-            
-            // toast.success('Player selected successfully!');
-        } else {
-            toast.error('Insufficient coins to select this player.', {
-                position: "top-center",
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-                
-            });
-            return;
-        }
-
+    if (coin >= player.bidding_price) {
+       // setPlayerQueue([...playerQueue, player])
+       
+       // toast.success('Player selected successfully!');
+    }
+    else {
+      toast.error(`Insufficient Coins to Select ${player.player_name} !!!`, {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",          
+      });
+      return;
+    };
 
     if (!isExist) {     
       setPlayerQueue([...playerQueue, player])
       setCoin(coin - player.bidding_price);
-      // handleDecreaseCoin(player.bidding_price) 
-      toast.success('The player is added to your squad', {
-                position: "top-center",
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-                
-            });
-            return;
+      toast.success(`Congratulation! You Selected ${player.player_name}!`, {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",                
+      });
+      return;
     }
     else {
-      toast.error('This Player is Already Slected', {
-                position: "top-center",
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-                
-            });
-            return;
-    }
-  } 
-
-  
-
+      toast.error(`${player.player_name} is Already Selected`, {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",               
+      });
+      return;
+    };
+  };
+ 
   const handleRemovePlayer = (id) => {
     const playerToRemove = playerQueue.find(player => player.player_id === id);
-    const updatedPlayerQueue = playerQueue.filter(player => player.player_id !== id)
-    setPlayerQueue(updatedPlayerQueue)
+    const updatedPlayerQueue = playerQueue.filter(player => player.player_id !== id);
+
+    setPlayerQueue(updatedPlayerQueue);
     setCoin(coin + playerToRemove.bidding_price);
-    toast.info('You removed this player from your squad', {
-                position: "top-center",
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-                
-            });
-            return;
-  }
+
+    toast.info(`You Removed ${playerToRemove.player_name} from Your Squad !!!`, {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",               
+    });
+    return;
+  };
 
   const handleIsActiveBtn = (status) => {
     if (status == "available") {
       setIsActive({
         player: true,
         status: "available"
-      })
+      });
     }
     else {
       setIsActive({
         player: false,
         status: "selected"
-      })
-    }
-  }
-
-  
+      });
+    };
+  };
 
   return (
     <div className="">
       {/* Header Section Starts Here */}
+      
+
       <Navbar coin={coin}></Navbar>
+      
+
       <Banner handleCreditCoin={handleCreditCoin}></Banner>
+      
       
       {/* Header Section Ends Here */}
       {/* Main Section Starts Here */}

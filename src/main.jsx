@@ -20,7 +20,6 @@ createRoot(document.getElementById('root')).render(
       pauseOnHover
       theme="colored"
       bodyClassName="toastBody"
-      transition: Flip
     />
   </StrictMode>,
 )

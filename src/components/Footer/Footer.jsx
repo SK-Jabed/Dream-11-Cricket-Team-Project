@@ -2,8 +2,10 @@ import FooterLogo from "../../assets/logo-footer.png"
 
 const Footer = () => {
     return (
-        <div className="">
-            <div className="container w-11/12 mx-auto bg-cover bg-no-repeat rounded-3xl md:h-[20rem] mb-8 mt-8" style={{backgroundImage: "url(https://i.ibb.co.com/fvVDKf7/bg-shadow.png)"}}>
+        <div className="absolute w-full ">
+            <div className="bg-[#edebeb18] border-2 border-white rounded-2xl w-11/12 mx-auto lg:p-8 p-3 border-solid relative top-48 z-10 backdrop-blur-sm">
+          
+            <div className="bg-cover bg-no-repeat bg-white rounded-3xl md:h-[22rem] relative" style={{backgroundImage: "url(https://i.ibb.co.com/fvVDKf7/bg-shadow.png)"}}>
                 <div className="flex flex-col items-center text-center">
                     <h2 className="text-4xl font-extrabold mt-16">Subscribe to our Newsletter</h2>
                     <p className="text-2xl font-semibold text-gray-400 mt-4">Get the latest updates and news right in your inbox!</p>
@@ -25,16 +27,24 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            </div>
 
             <div className="w-full pt-60 pb-12 bg-black">
                 <div className="flex justify-center items-center">
                 <img className="" src={FooterLogo} alt="Footer Logo"></img>
                 </div>
-                <div className="container w-11/12 mx-auto pt-16 flex lg:justify-between lg:flex-row flex-col gap-8 lg:px-0 px-6">
+                <div className="container w-11/12 mx-auto pt-16 flex lg:justify-between lg:flex-row flex-col gap-3 lg:gap-0 lg:px-0 px-6">
                     <div className="left-side-content flex flex-col gap-2 items-start">
                         <div className="info mt-4 flex flex-col gap-2">
                             <h3 className="text-white text-lg font-semibold">About Us</h3>
                             <p className="text-sm text-gray-500 font-medium w-2/4">We are a passionate team dedicated to providing the best services to our customers.</p>
+                        </div>
+                        <h3 className="font-semibold mb-4">Follow Us</h3>
+                        <div className="flex space-x-4">
+                            <a href="#" className="text-gray-300 hover:text-white"><i className="fab fa-facebook-f"></i></a>
+                            <a href="#" className="text-gray-300 hover:text-white"><i className="fab fa-twitter"></i></a>
+                            <a href="#" className="text-gray-300 hover:text-white"><i className="fab fa-instagram"></i></a>
+                            <a href="#" className="text-gray-300 hover:text-white"><i className="fab fa-linkedin"></i></a>
                         </div>
                     </div>
 
@@ -51,7 +61,7 @@ const Footer = () => {
                     <div className="right-side-content flex flex-col gap-2 items-start">
                         <h2 className="text-lg text-white font-semibold mb-4">Subscribe</h2>
                         <p className="text-sm text-gray-500 font-medium w-3/4">Subscribe to our newsletter for the latest updates.</p>
-                        <div className="mt-8 flex items-center">
+                        <div className="mt-8 flex items-center gap-2">
                             <label className="input input-bordered flex items-center gap-2">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -68,6 +78,10 @@ const Footer = () => {
                             <button className="bg-yellow-400 rounded-xl py-3 px-5 hover:bg-yellow-500"><a className="text-lg font-bold" href="#">Subscribe</a></button>
                         </div>
                     </div>
+                    {/* Footer Bottom */}
+                </div>
+                <div className="mt-12 text-center text-gray-500">
+                    &copy; {new Date().getFullYear()} Your Company. All Rights Reserved.
                 </div>
             </div>
         </div>       

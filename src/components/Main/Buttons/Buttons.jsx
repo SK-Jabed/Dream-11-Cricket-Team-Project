@@ -11,9 +11,10 @@ const Buttons = ({handleIsActiveBtn, isActive, addPlayerToQueue, playerQueue, ha
                 {
                 isActive.player ? <h2 className="text-2xl font-bold">Available Players</h2> : <h2 className="text-2xl font-bold">Selected Players ({playerQueue.length}/6)</h2>
                 }
-                <div>                   
-                <div onClick={() => handleIsActiveBtn("available")} className={`${isActive.player ? "btn active" : "btn"}`}>Available</div>
-                <div onClick={() => handleIsActiveBtn("selected")} className={`${isActive.player ? "btn" : "btn active"}`}>Selected ({playerQueue.length})</div>
+                <div className="flex">                   
+                <button onClick={() => handleIsActiveBtn("available")} className={`${isActive.player ? "bg-[#E7FE29] text-[#131313] font-bold rounded-tl-lg rounded-bl-lg px-7 py-3 border border-[#1313131a] border-r-0" : "text-[#13131399] bg-white border border-[#1313131a] border-r-0 px-7 py-3 rounded-tl-lg rounded-bl-lg"}`}>Available</button>
+
+                <button onClick={() => handleIsActiveBtn("selected")} className={`${isActive.player ? "text-[#13131399] bg-white border border-[#1313131a] border-l-0 px-7 py-3 rounded-tr-lg rounded-br-lg" : "bg-[#E7FE29] text-[#131313] font-bold px-7 py-3 border border-[#1313131a] border-l-0 rounded-br-lg rounded-tr-lg"}`}>Selected ({playerQueue.length})</button>
                 </div>
             </div>
             
