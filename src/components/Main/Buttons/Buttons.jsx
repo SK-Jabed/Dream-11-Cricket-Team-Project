@@ -18,7 +18,7 @@ const Buttons = ({handleIsActiveBtn, isActive, addPlayerToQueue, playerQueue, ha
             </div>
             
             {
-                isActive.player ? <AvailablePlayers addPlayerToQueue={addPlayerToQueue}></AvailablePlayers> : <SelectedPlayers playerQueue={playerQueue} handleRemovePlayer={handleRemovePlayer}></SelectedPlayers>
+                isActive.player ? <AvailablePlayers addPlayerToQueue={addPlayerToQueue}></AvailablePlayers> : <SelectedPlayers playerQueue={playerQueue} handleRemovePlayer={handleRemovePlayer} handleIsActiveBtn={handleIsActiveBtn}></SelectedPlayers>
             }
                       
         </div>

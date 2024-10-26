@@ -1,6 +1,6 @@
 
 
-const SelectedPlayers = ({playerQueue, handleRemovePlayer}) => {
+const SelectedPlayers = ({playerQueue, handleRemovePlayer, handleIsActiveBtn}) => {
     return (
         <div>
             <h2 className=" text-4xl font-bold text-center">Selected Players: {playerQueue.length}</h2>
@@ -12,7 +12,7 @@ const SelectedPlayers = ({playerQueue, handleRemovePlayer}) => {
                             <div className="flex items-center">
                                 <div className="flex items-center space-x-2">
                                 <p>{idx + 1}</p>
-                                <img className="w-16 h-16 border-1 p-1 border-yellow-400 rounded-2xl" src={player.player_image} alt="Selected Players Image"></img>                            
+                                <img className="w-20 h-20 border-1 p-1 border-yellow-400 rounded-2xl" src={player.player_image} alt="Selected Players Image"></img>                            
                                 </div>
                                 <div>
                                     <p>{player.player_name}</p>
@@ -32,7 +32,7 @@ const SelectedPlayers = ({playerQueue, handleRemovePlayer}) => {
             </div>
 
             <div className="mt-8 ">
-                <button  className="bg-yellow-400 rounded-xl py-3 px-5 hover:bg-yellow-500"><a className="text-lg font-bold">Add More Player</a></button>
+                <button onClick={() => handleIsActiveBtn("available")} className="bg-yellow-400 rounded-xl py-3 px-5 hover:bg-yellow-500"><a className="text-lg font-bold">Add More Player</a></button>
             </div>
         </div>
     );

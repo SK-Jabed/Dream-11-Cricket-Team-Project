@@ -18,15 +18,15 @@ const AvailablePlayers = ({addPlayerToQueue}) => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {
                     allPlayers.map(player => (
-                    <div key={player.player_id} className="card shadow-xl">
+                    <div key={player.player_id} className="card shadow-xl p-4">
                         <figure>
-                            <img
+                            <img className="w-[28rem] h-[18rem] rounded-xl"
                                 src={player.player_image}
                                 alt="Player Image" />
                             </figure>
-                        <div className="p-4">
+                        <div className="">
                             <div className="flex items-center space-x-2">
-                                <img className="w-12 h-12 border-2 border-solid rounded-full" src={player.player_image}></img>
+                                <img className="w-16 h-16 border-2 border-solid rounded-full" src={player.player_image}></img>
                                 <h2 className="plyer-name">{player.player_name}</h2>
                             </div>
                             <div className="flex justify-between items-center">
@@ -39,8 +39,8 @@ const AvailablePlayers = ({addPlayerToQueue}) => {
                             </div>
                             <p className="">Rating: {player.rating}</p>
                             <div className="flex justify-between items-center">
-                                <p>{player.batting_balling_type}</p>
-                                <p>{player.batting_balling_type}</p>
+                                <p>{player.batting_style}</p>
+                                <p>{player.bowling_style}</p>
                             </div>
                             <div className="flex justify-between items-center">
                                 <p>Price: ${player.bidding_price}</p>
