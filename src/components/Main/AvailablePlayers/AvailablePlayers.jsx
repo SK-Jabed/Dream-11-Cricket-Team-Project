@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-
+import PropTypes from "prop-types";
 
 const AvailablePlayers = ({addPlayerToQueue}) => {
     const [allPlayers, setAllPlayers] = useState([]);
 
     useEffect(() => {
-        fetch("/public/players.json")
+        fetch(`/public/players.json`)
             .then(res => res.json())
             .then(data => setAllPlayers(data))
     }, [])
@@ -54,5 +54,9 @@ const AvailablePlayers = ({addPlayerToQueue}) => {
         </div>
     );
 };
+
+AvailablePlayers.propTypes = {
+    addPlayerToQueue: PropTypes.func
+}
 
 export default AvailablePlayers;

@@ -30,7 +30,10 @@ const Buttons = ({handleIsActiveBtn, isActive, addPlayerToQueue, playerQueue, ha
 
 Buttons.propTypes = {
     handleIsActiveBtn: PropTypes.func,
-    isActive: PropTypes.object
+    isActive: PropTypes.object,
+    addPlayerToQueue: PropTypes.func,
+    playerQueue: PropTypes.object,
+    handleRemovePlayer: PropTypes.func
 }
 
 export default Buttons;

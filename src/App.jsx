@@ -4,6 +4,10 @@ import Banner from "./components/Header/Banner";
 import Navbar from "./components/Header/Navbar";
 import Buttons from "./components/Main/Buttons/Buttons";
 import { toast } from "react-toastify";
+import AvailablePlayers from "./components/Main/AvailablePlayers/AvailablePlayers";
+import SelectedPlayers from "./components/Main/SelectedPlayers/SelectedPlayers";
+// import AvailablePlayers from "./components/Main/AvailablePlayers/AvailablePlayers";
+// import SelectedPlayers from "./components/Main/SelectedPlayers/SelectedPlayers";
 
 
 const App = () => {
@@ -147,13 +151,17 @@ const App = () => {
       
       {/* Header Section Ends Here */}
       {/* Main Section Starts Here */}
-      <Buttons 
+      {/* <Buttons 
       isActive={isActive} 
       handleIsActiveBtn={handleIsActiveBtn} 
       addPlayerToQueue={addPlayerToQueue} 
       playerQueue={playerQueue}
       handleRemovePlayer ={handleRemovePlayer}
-      ></Buttons>
+      ></Buttons> */}
+      
+      <AvailablePlayers></AvailablePlayers>
+      {/* <SelectedPlayers></SelectedPlayers> */}
+
       {/* Main Section Ends Here */}
       {/* Footer Section Starts Here */}
       <Footer></Footer>

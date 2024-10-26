@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types";
 
 const SelectedPlayers = ({playerQueue, handleRemovePlayer, handleIsActiveBtn}) => {
     return (
@@ -37,5 +37,11 @@ const SelectedPlayers = ({playerQueue, handleRemovePlayer, handleIsActiveBtn}) =
         </div>
     );
 };
+
+SelectedPlayers.propTypes = {
+    handleIsActiveBtn: PropTypes.func,
+    playerQueue: PropTypes.object,
+    handleRemovePlayer: PropTypes.func
+}
 
 export default SelectedPlayers;

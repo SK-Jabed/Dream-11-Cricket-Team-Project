@@ -33,7 +33,7 @@ const Footer = () => {
                 <div className="flex justify-center items-center">
                 <img className="" src={FooterLogo} alt="Footer Logo"></img>
                 </div>
-                <div className="container w-11/12 mx-auto pt-16 flex lg:justify-between lg:flex-row flex-col gap-3 lg:gap-0 lg:px-0 px-6">
+                <div className="container w-11/12 mx-auto pt-16 flex lg:justify-between lg:flex-row flex-col gap-3 lg:gap-0 lg:px-0 px-6 mb-4">
                     <div className="left-side-content flex flex-col gap-2 items-start">
                         <div className="info mt-4 flex flex-col gap-2">
                             <h3 className="text-white text-lg font-semibold">About Us</h3>
@@ -80,7 +80,8 @@ const Footer = () => {
                     </div>
                     {/* Footer Bottom */}
                 </div>
-                <div className="mt-12 text-center text-gray-500">
+                <hr></hr>
+                <div className="mt-4 text-center text-gray-500">
                     &copy; {new Date().getFullYear()} Your Company. All Rights Reserved.
                 </div>
             </div>
