@@ -29,7 +29,7 @@ These technologies helped me efficiently build and style the 'Dream 11 Cricket t
 
 ## Live Link
 Here is The Live Link of This Pet Adoption Platform Project:
-# [https://peddy-assingment-6.netlify.app/](https://peddy-assingment-6.netlify.app/)
+# [https://dream-11-ceicket-team-a07.netlify.app/](https://dream-11-ceicket-team-a07.netlify.app/)
 
 ## Installation
 1. Clone the repository:

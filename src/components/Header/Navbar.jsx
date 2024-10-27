@@ -1,5 +1,6 @@
 import logo from "../../assets/logo.png"
 import coinPng from "../../assets/coin.png"
+import PropTypes from "prop-types";
 
 const Navbar = ({coin}) => {
     return (
@@ -42,5 +43,9 @@ const Navbar = ({coin}) => {
         </div>
     );
 };
+
+Navbar.propTypes = {
+  coin: PropTypes.number
+}
 
 export default Navbar;

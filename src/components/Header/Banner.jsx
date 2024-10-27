@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import bannerImage from "../../assets/banner-main.png"
 
 const Banner = ({handleCreditCoin}) => {
@@ -14,5 +15,9 @@ const Banner = ({handleCreditCoin}) => {
         </div>
     );
 };
+
+Banner.propTypes = {
+    handleCreditCoin: PropTypes.func
+}
 
 export default Banner;
