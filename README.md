@@ -31,6 +31,8 @@ Here are the technologies I used in the 'Dream 11 Cricket team' project:
 - **ESLint / Prettier**: Tools to maintain code quality and consistency by enforcing coding styles and formatting.
 These technologies helped me efficiently build and style the 'Dream 11 Cricket team' webpage.
 
+--
+
 ## Live Link
 Here is The Live Link of This Pet Adoption Platform Project:
 # [https://dream-11-ceicket-team-a07.netlify.app/](https://dream-11-ceicket-team-a07.netlify.app/)
