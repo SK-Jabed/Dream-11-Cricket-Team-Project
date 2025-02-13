@@ -5,11 +5,10 @@ import Navbar from "./components/Header/Navbar";
 import Buttons from "./components/Main/Buttons/Buttons";
 import { toast } from "react-toastify";
 
-
 const App = () => {
   const [isActive, setIsActive] = useState({
     player: true,
-    status: "available"
+    status: "available",
   });
 
   const [playerQueue, setPlayerQueue] = useState([]);
@@ -26,14 +25,14 @@ const App = () => {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      theme: "colored",                
+      theme: "colored",
     });
     return;
   };
 
-  const addPlayerToQueue = player => {
+  const addPlayerToQueue = (player) => {
     const isExist = playerQueue.find(
-      previousPlayer => previousPlayer.player_id === player.player_id
+      (previousPlayer) => previousPlayer.player_id === player.player_id
     );
 
     if (playerQueue.length >= 6) {
@@ -45,17 +44,15 @@ const App = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "colored",          
+        theme: "colored",
       });
       return;
-    };
+    }
 
     if (coin >= player.bidding_price) {
-       // setPlayerQueue([...playerQueue, player])
-       
-       // toast.success('Player selected successfully!');
-    }
-    else {
+      // setPlayerQueue([...playerQueue, player])
+      // toast.success('Player selected successfully!');
+    } else {
       toast.error(`Insufficient Coins to Select ${player.player_name} !!!`, {
         position: "top-center",
         autoClose: 2000,
@@ -64,13 +61,13 @@ const App = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "colored",          
+        theme: "colored",
       });
       return;
-    };
+    }
 
-    if (!isExist) {     
-      setPlayerQueue([...playerQueue, player])
+    if (!isExist) {
+      setPlayerQueue([...playerQueue, player]);
       setCoin(coin - player.bidding_price);
       toast.success(`Congratulation! You Selected ${player.player_name}!`, {
         position: "top-center",
@@ -80,11 +77,10 @@ const App = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "colored",                
+        theme: "colored",
       });
       return;
-    }
-    else {
+    } else {
       toast.error(`${player.player_name} is Already Selected`, {
         position: "top-center",
         autoClose: 2000,
@@ -93,29 +89,36 @@ const App = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "colored",               
+        theme: "colored",
       });
       return;
-    };
+    }
   };
- 
+
   const handleRemovePlayer = (id) => {
-    const playerToRemove = playerQueue.find(player => player.player_id === id);
-    const updatedPlayerQueue = playerQueue.filter(player => player.player_id !== id);
+    const playerToRemove = playerQueue.find(
+      (player) => player.player_id === id
+    );
+    const updatedPlayerQueue = playerQueue.filter(
+      (player) => player.player_id !== id
+    );
 
     setPlayerQueue(updatedPlayerQueue);
     setCoin(coin + playerToRemove.bidding_price);
 
-    toast.info(`You Removed ${playerToRemove.player_name} from Your Squad !!!`, {
-      position: "top-center",
-      autoClose: 2000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "colored",               
-    });
+    toast.info(
+      `You Removed ${playerToRemove.player_name} from Your Squad !!!`,
+      {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      }
+    );
     return;
   };
 
@@ -123,15 +126,14 @@ const App = () => {
     if (status == "available") {
       setIsActive({
         player: true,
-        status: "available"
+        status: "available",
       });
-    }
-    else {
+    } else {
       setIsActive({
         player: false,
-        status: "selected"
+        status: "selected",
       });
-    };
+    }
   };
 
   return (
@@ -139,19 +141,19 @@ const App = () => {
       {/* Header Section Starts Here */}
       <Navbar coin={coin}></Navbar>
 
-      <Banner handleCreditCoin={handleCreditCoin}></Banner>      
+      <Banner handleCreditCoin={handleCreditCoin}></Banner>
       {/* Header Section Ends Here */}
 
       {/* Main Section Starts Here */}
-      <Buttons 
-      isActive={isActive} 
-      handleIsActiveBtn={handleIsActiveBtn} 
-      addPlayerToQueue={addPlayerToQueue} 
-      playerQueue={playerQueue}
-      handleRemovePlayer ={handleRemovePlayer}
+      <Buttons
+        isActive={isActive}
+        handleIsActiveBtn={handleIsActiveBtn}
+        addPlayerToQueue={addPlayerToQueue}
+        playerQueue={playerQueue}
+        handleRemovePlayer={handleRemovePlayer}
       ></Buttons>
       {/* Main Section Ends Here */}
-      
+
       {/* Footer Section Starts Here */}
       <Footer></Footer>
       {/* Footer Section Ends Here */}
