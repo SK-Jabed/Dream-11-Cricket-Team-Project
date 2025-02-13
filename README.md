@@ -3,6 +3,8 @@
 ## Project Description
 **Welcome to Dream 11 Cricket Team !!!** The 'Dream 11 Cricket' Team webpage is an interactive platform that allows users to create their own fantasy cricket team by selecting players from a pool. It features a smooth user interface with functionalities such as choosing players based on available coins, adding or removing players from the team and clear feedback notifications using React-Toastify. The design also includes a stylish footer and newsletter section, providing a complete and engaging experience for cricket enthusiasts.
 
+--
+
 ## 3 Key Features
 1. **Player Selection and Validation:**:
    - Users can choose players for their cricket team while ensuring they stay within a coin budget. The application checks if a player is already selected or if the team has reached the maximum limit and displays alerts using React-Toastify for better notifications.
