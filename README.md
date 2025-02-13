@@ -15,6 +15,8 @@
 3. **Responsive Design with Tailwind CSS:**:
    - The project is styled using Tailwind CSS, ensuring a clean, responsive layout. The integration of DaisyUI components helps maintain a consistent design theme, while React ensures the user interface is interactive and user-friendly.
 
+--
+
 ## Technologies Used:
 Here are the technologies I used in the 'Dream 11 Cricket team' project:
 - **HTML**: For structuring the content of the webpage.
